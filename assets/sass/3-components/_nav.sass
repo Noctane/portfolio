@@ -1,0 +1,28 @@
+.navigation
+  position: fixed
+  top: 25vh
+  left: 14em
+  z-index: 100
+
+.menu
+  width: 15em
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+    li
+      line-height: 1.2
+      text-align: right
+
+      a
+        font-size: 0.8em
+        //font-weight: lighter
+        color: $grey-light
+        text-transform: uppercase
+        text-decoration: none
+        transition: 0.2s
+        &:hover, &.active
+          font-size: 1em
+          transition: 0.2s
+          color: $primary-color
