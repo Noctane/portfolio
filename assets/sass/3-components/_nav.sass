@@ -1,18 +1,27 @@
 .navigation
   position: fixed
   top: 25vh
-  left: 5em
   z-index: 100
+  left: 5em
+  @media(max-width: 768px)
+    left: 1em
+    top: 35vh
+  @media(max-width: 414px)
+    display: none
 
 .menu
-  width: 10em
   ul
     margin: 0
     padding: 0
     list-style: none
+    text-align: right
 
     li
       line-height: 1.2
+      &.bounceIn
+        animation-name: bounceInLeft
+        animation-duration: 1s
+        animation-fill-mode: both
       &.active a
         font-size: 1em
         transition: 0.2s

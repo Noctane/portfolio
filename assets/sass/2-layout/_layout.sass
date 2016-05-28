@@ -1,5 +1,6 @@
 section
-  height: 100vh
+  @media(max-width: 414px)
+    margin-bottom: 5em
 
 .container
   +container
@@ -7,3 +8,5 @@ section
 .section-content
   +span(10 last)
   +nested(10)
+  @media(max-width: 414px)
+    +span(12)

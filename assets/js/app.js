@@ -1,13 +1,19 @@
 $(document).ready(function() {
 
-$('#fullpage').fullpage({
-  anchors: ['Home', 'Portfolio', 'Experiences', 'Formations', 'Contact'],
-  menu: '#nav',
-});
-
+  if (document.documentElement.clientWidth > 414) {
+    $('#fullpage').fullpage({
+      anchors: ['Home', 'Portfolio', 'Experiences', 'Formations', 'Contact'],
+      menu: '#nav',
+    });
+  }
 
   // Nav Links
-
+  $('#nav li').hide();
+  $('#nav li').each(function(i) {
+    setTimeout(function() {
+      $('#nav li').eq(i).show().addClass('bounceIn');
+    }, 200 * i);
+  });
   // $('.menu a[href^="#"]').on('click', function(e) {
   //   e.preventDefault();
   //

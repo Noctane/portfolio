@@ -2,6 +2,10 @@
   padding-top: 10em
   height: 100vh
   //background: url(../img/2015_logo-greyscale.png)
+  @media(max-width: 768px)
+    padding-top: 15em
+  @media(max-width: 414px)
+    padding-top: 5em
 
 .logo
   padding: 2em
@@ -11,9 +15,10 @@
     margin: 0 auto
 
 .title
-  +span(4 last)
+  display: block
   line-height: 1.2
-  margin-right: +span(1)
+  margin: 0 auto
+  text-align: center
 
   h1
     font-size: 1.5em
@@ -33,7 +38,7 @@
     list-style: none
 
     li
-      float: left
+      display: inline-block
 
       a
         color: $grey-light

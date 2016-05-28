@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 	if (isset($_POST["submit"])) {
 		$name = $_POST['name'];
 		$email = $_POST['email'];
@@ -38,7 +38,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	}
 }
 	}
-?> -->
+?>
 
 
 <!DOCTYPE html>
@@ -238,28 +238,28 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
               <div class="form-group">
                 <label for="name">Nom</label>
                 <input type="text" name="name" id="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-								<!-- <?php echo "<p class='text-danger'>$errName</p>";?> -->
+								<?php echo "<p class='text-danger'>$errName</p>";?>
               </div>
               <div class="form-group">
                 <label for="email">Mail</label>
                 <input type="email" name="email" id="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-								<!-- <?php echo "<p class='text-danger'>$errEmail</p>";?> -->
+								<?php echo "<p class='text-danger'>$errEmail</p>";?>
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea rows="5" name="message" id="mail"><?php echo htmlspecialchars($_POST['message']);?></textarea>
-								<!-- <?php echo "<p class='text-danger'>$errMessage</p>";?> -->
+								<?php echo "<p class='text-danger'>$errMessage</p>";?>
               </div>
 							<div class="form-group">
 								<label for="human">2 + 3 = ?</label>
 								<input type="text" class="form-control" id="human" name="human" placeholder="Votre réponse">
-								<!-- <?php echo "<p class='text-danger'>$errHuman</p>";?> -->
+								<?php echo "<p class='text-danger'>$errHuman</p>";?>
 							</div>
               <div class="button">
                 <button id="submit" name="submit" type="submit">Envoyer</button>
               </div>
 							<div class="result">
-								<!-- <?php echo $result; ?> -->
+								<?php echo $result; ?>
 							</div>
             </form>
           </div>
@@ -272,6 +272,16 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script src="js/fullpagejs/jquery.fullpage.js"></script>
   <script src="js/app.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-19336133-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
   </body>
 </html>

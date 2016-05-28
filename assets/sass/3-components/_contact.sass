@@ -1,2 +1,42 @@
 .contact
-  padding: 10em 0
+  padding: 5em 0
+  @media(max-width: 1024px)
+    padding: 2em 0
+  @media(max-width: 768px)
+    padding: 0 1em
+
+.form-group
+  +clearfix
+  margin: 0.5em 0
+  label
+    display: block
+  input, textarea
+    +span(8)
+    border-radius: 6px
+    border: solid 3px $grey-light
+    line-height: 2em
+    padding: 0 8px
+    &:focus
+      border-color: $primary-color
+      outline: none
+    @media(max-width: 414px)
+      +span(12)
+
+.button
+  margin: 1em 0
+  +span(8)
+  @media(max-width: 414px)
+    +span(12)
+  button
+    border: none
+    background: $primary-color
+    text-transform: uppercase
+    font-size: 0.8em
+    color: #fff
+    border-radius: 30px
+    padding: 8px 48px
+    float: right
+    transition: background ease-in-out 200ms
+    &:hover
+      background: lighten($primary-color, 10%)
+      transition: background ease-in-out 200ms

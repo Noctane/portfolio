@@ -1,6 +1,9 @@
 .portfolio
   background: url(../img/portfolio.jpg) no-repeat
   background-size: cover
+  @media(max-width: 768px)
+    padding: 0 1em
+
 
   h2
     color: #fff
@@ -8,9 +11,13 @@
 .showcase
   +clearfix
   position: relative
+  @media(max-width: 1024px)
+    width: 70%
+    margin: 0 auto
+  @media(max-width: 414px)
+    padding: 1em
 
 .showcase-img
-  border-radius: 3px 3px 0 0
   overflow: hidden
   img
     +img-responsive
@@ -27,13 +34,3 @@
     margin: 0
   p
     font-size: 0.8em
-
-.gallery
-  +clearfix
-  margin-top: 1em
-
-  .work-item
-    +span(2)
-
-    img
-      +img-responsive
