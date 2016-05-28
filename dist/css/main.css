@@ -402,18 +402,17 @@ section {
 .navigation {
   position: fixed;
   top: 25vh;
-  left: 14em;
+  left: 5em;
   z-index: 100; }
 
 .menu {
-  width: 15em; }
+  width: 10em; }
   .menu ul {
     margin: 0;
     padding: 0;
     list-style: none; }
     .menu ul li {
-      line-height: 1.2;
-      text-align: right; }
+      line-height: 1.2; }
       .menu ul li.active a {
         font-size: 1em;
         -webkit-transition: 0.2s;
@@ -474,8 +473,7 @@ section {
 
 .portfolio {
   background: url(../img/portfolio.jpg) no-repeat;
-  background-size: cover;
-  padding: 5em 0; }
+  background-size: cover; }
   .portfolio h2 {
     color: #fff; }
 

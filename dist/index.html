@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Arnaud Prat - Webdesigner / Front-end Développeur</title>
     <script src="https://use.fontawesome.com/0bad4a588e.js"></script>
+    <link rel="stylesheet" href="js/fullpagejs/jquery.fullpage.min.css">
     <link rel="stylesheet" href="css/main.css">
 
   </head>
@@ -13,188 +14,234 @@
 
   <div class="navigation">
     <nav class="menu">
-      <ul>
-        <li class="active"><a href="#home">Home</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#exp">Experiences</a></li>
-        <li><a href="#courses">formation</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul id="nav">
+        <li data-menuanchor="Home" class="active"><a href="#Home">Home</a></li>
+        <li data-menuanchor="Portfolio"><a href="#Portfolio">Portfolio</a></li>
+        <li data-menuanchor="Experiences"><a href="#Experiences">Experiences</a></li>
+        <li data-menuanchor="Formations"><a href="#Formations">formations</a></li>
+        <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 
-  <section class="intro" id="home">
-    <div class="container">
-      <div class="logo">
-        <img src="img/logo.svg" alt="Arnaud Prat">
-      </div>
-      <div class="title">
-      <h1><span>.</span>arnaud prat</h1>
-      <h2 class="sub">webdesigner / dev Front-end</h2>
-      <div class="social">
-        <ul>
-          <li><a href="https://fr.linkedin.com/pub/arnaud-prat/83/5b2/bb2"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-        <ul>
-          <li><a href="https://github.com/Noctane"><i class="fa fa-github"></i></a></li>
-        </ul>
-        <ul>
-          <li><a href="https://twitter.com/arnaudprat"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-      </div>
-      </div>
+  <div id="fullpage">
 
-
-    </div>
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <h2><span>.</span>projets</h2>
-
-      <div class="section-content">
-
-        <div class="showcase">
-          <div class="showcase-img">
-              <img src="img/cgp.jpg" alt="">
+    <div class="section">
+      <section class="intro" data-anchor="Home">
+        <div class="container">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Arnaud Prat">
           </div>
-          <div class="showcase-caption">
-            <h3><span>.</span>Cards</h3>
-            <p>Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Aliquid error.</p>
+          <div class="title">
+          <h1><span>.</span>arnaud prat</h1>
+          <h2 class="sub">webdesigner / dev Front-end</h2>
+          <div class="social">
+            <ul>
+              <li><a href="https://fr.linkedin.com/pub/arnaud-prat/83/5b2/bb2"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://github.com/Noctane"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://twitter.com/arnaudprat"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="portfolio" data-anchor="Portfolio">
+        <div class="container">
+          <div class="slide" data-anchor="slide1">
+            <div class="showcase">
+              <div class="showcase-img">
+                  <img src="img/cncgp.jpg">
+              </div>
+              <div class="showcase-caption">
+                <h3><span>.</span>CNCGP</h3>
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Aliquid error.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide2">
+            <div class="showcase">
+              <div class="showcase-img">
+                  <img src="img/card.jpg">
+              </div>
+              <div class="showcase-caption">
+                <h3><span>.</span>Cards</h3>
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Aliquid error.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide3">
+            <div class="showcase">
+              <div class="showcase-img">
+                  <img src="img/cgp.jpg">
+              </div>
+              <div class="showcase-caption">
+                <h3><span>.</span>CGP</h3>
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Aliquid error.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container">
+          <h2><span>.</span>projets</h2>
+
+          <div class="section-content">
+
+            <div class="showcase">
+              <div class="showcase-img">
+                  <img src="img/cgp.jpg" alt="">
+              </div>
+              <div class="showcase-caption">
+                <h3><span>.</span>Cards</h3>
+                <p>Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Aliquid error.</p>
+              </div>
+            </div>
+
+            <div class="gallery">
+                <div class="work-item"><img src="img/plume-doie.jpg"></div>
+                <div class="work-item"><img src="img/cncgp.jpg"></div>
+                <div class="work-item"><img src="img/cgp.jpg"></div>
+                <div class="work-item is_active"><img src="img/card.jpg"></div>
+            </div>
+
+          </div>
+        </div> -->
+
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="experience" data-anchor="Experiences">
+        <div class="container">
+          <h2><span>.</span>experiences</h2>
+          <div class="section-content">
+            <div class="jobs">
+              <h3><span>.</span>JurisCampus</h3>
+              <h4>Responsable création/Webdesigner</h4>
+              <p class="date">2011 à aujourd'hui</p>
+              <p>En charge de la production graphique print et web de l'institut. <br>
+              Création d'outils dédiés à l'apprentissage en ligne. <br>
+              Création de templates Moodle (LMS)</p>
+
+              <h3><span>.</span>Andil</h3>
+              <h4>Stage Webmaster</h4>
+              <p class="date">2011</p>
+              <p>Création d'éléments graphiques et ergonomiques pour différents sites clients <br>
+              Création de thème Joomla <br>
+              Refonte graphique à titre évenementiel pour les 10 ans de la société</p>
+
+              <h3><span>.</span>Frédéric Vaysse-Knitter</h3>
+              <h4>Webdesigner/Intégrateur</h4>
+              <p class="date">2015</p>
+              <p>Création d'un thème Wordpress et webdesign</p>
+
+            </div>
+            <div class="jobs">
+              <h3><span>.</span>Auberge de la Plume d'Oie</h3>
+              <h4>Webdesigner/Intégrateur</h4>
+              <p class="date">2015</p>
+              <p>Conception du site internet HTML5/CSS3</p>
+
+              <h3><span>.</span>CETEP ADN export</h3>
+              <h4>Graphiste</h4>
+              <p class="date">2013</p>
+              <p>Création de logo</p>
+
+              <h3><span>.</span>Le Clos de Morphée</h3>
+              <h4>Webdesigner/Intégrateur</h4>
+              <p class="date">2012</p>
+              <p>Intégration sous Wordpress</p>
+            </div>
           </div>
         </div>
 
-        <div class="gallery">
-            <div class="work-item"><img src="img/plume-doie.jpg"></div>
-            <div class="work-item"><img src="img/cncgp.jpg"></div>
-            <div class="work-item"><img src="img/cgp.jpg"></div>
-            <div class="work-item is_active"><img src="img/card.jpg"></div>
-        </div>
-
+      </section>
     </div>
+
+    <div class="section">
+      <section class="formation" data-anchor="Formations">
+        <div class="container">
+          <h2><span>.</span>formations</h2>
+
+          <div class="section-content">
+
+            <div class="courses">
+              <h3><span>.</span>Formation qualifiante Webmaster</h3>
+              <h4>Lycée Saliège - Balma</h4>
+              <p class="date">2010 - 2011</p>
+
+              <h3><span>.</span>L3 Arts Appliqués</h3>
+              <h4>Université Jean Jaurès - Toulouse</h4>
+              <p class="date">2009 - 2010</p>
+
+              <h3><span>.</span>BTS Design de produits</h3>
+              <h4>Lycée Jean Perrin - Marseille</h4>
+              <p class="date">2008</p>
+
+              <h3><span>.</span>Auto-formation</h3>
+              <ul>
+                <li>Javascript</li>
+                <li>PHP/MySQL</li>
+                <li>Ruby on rails</li>
+              </ul>
+            </div>
+            <div class="courses">
+              <h3><span>.</span>Skill set</h3>
+              <ul>
+                <li>Suite Adobe</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>PHP</li>
+                <li>Ruby on rails</li>
+                <li>Reactjs</li>
+                <li>Wordpress</li>
+                <li>Jekyll</li>
+                <li>Gulp</li>
+                <li>Joomla</li>
+                <li>Atom</li>
+                <li>PHP Storm</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <div class="section">
+      <section class="contact" data-anchor="Contact">
+        <div class="container">
+          <h2><span>.</span>laissez moi un message</h2>
+
+          <div class="section-content">
+            <form action="mailto:arnaud.prat@gmail.com">
+              <label for="mail">mail</label>
+              <input type="text" id="mail">
+              <label for="message">Message</label>
+              <textarea cols="30" rows="10" id="message"></textarea>
+              <button type="submit">submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </div>
-  </section>
-
-
-  <section class="experience" id="exp">
-    <div class="container">
-      <h2><span>.</span>experiences</h2>
-      <div class="section-content">
-        <div class="jobs">
-          <h3><span>.</span>JurisCampus</h3>
-          <h4>Responsable création/Webdesigner</h4>
-          <p class="date">2011 à aujourd'hui</p>
-          <p>En charge de la production graphique print et web de l'institut. <br>
-          Création d'outils dédiés à l'apprentissage en ligne. <br>
-          Création de templates Moodle (LMS)</p>
-
-          <h3><span>.</span>Andil</h3>
-          <h4>Stage Webmaster</h4>
-          <p class="date">2011</p>
-          <p>Création d'éléments graphiques et ergonomiques pour différents sites clients <br>
-          Création de thème Joomla <br>
-          Refonte graphique à titre évenementiel pour les 10 ans de la société</p>
-
-          <h3><span>.</span>Frédéric Vaysse-Knitter</h3>
-          <h4>Webdesigner/Intégrateur</h4>
-          <p class="date">2015</p>
-          <p>Création d'un thème Wordpress et webdesign</p>
-
-        </div>
-        <div class="jobs">
-          <h3><span>.</span>Auberge de la Plume d'Oie</h3>
-          <h4>Webdesigner/Intégrateur</h4>
-          <p class="date">2015</p>
-          <p>Conception du site internet HTML5/CSS3</p>
-
-          <h3><span>.</span>CETEP ADN export</h3>
-          <h4>Graphiste</h4>
-          <p class="date">2013</p>
-          <p>Création de logo</p>
-
-          <h3><span>.</span>Le Clos de Morphée</h3>
-          <h4>Webdesigner/Intégrateur</h4>
-          <p class="date">2012</p>
-          <p>Intégration sous Wordpress</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="formation" id="courses">
-    <div class="container">
-      <h2><span>.</span>formations</h2>
-
-      <div class="section-content">
-
-        <div class="courses">
-          <h3><span>.</span>Formation qualifiante Webmaster</h3>
-          <h4>Lycée Saliège - Balma</h4>
-          <p class="date">2010 - 2011</p>
-
-          <h3><span>.</span>L3 Arts Appliqués</h3>
-          <h4>Université Jean Jaurès - Toulouse</h4>
-          <p class="date">2009 - 2010</p>
-
-          <h3><span>.</span>BTS Design de produits</h3>
-          <h4>Lycée Jean Perrin - Marseille</h4>
-          <p class="date">2008</p>
-
-          <h3><span>.</span>Auto-formation</h3>
-          <ul>
-            <li>Javascript</li>
-            <li>PHP/MySQL</li>
-            <li>Ruby on rails</li>
-          </ul>
-        </div>
-        <div class="courses">
-          <h3><span>.</span>Skill set</h3>
-          <ul>
-            <li>Suite Adobe</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>jQuery</li>
-            <li>PHP</li>
-            <li>Ruby on rails</li>
-            <li>Reactjs</li>
-            <li>Wordpress</li>
-            <li>Jekyll</li>
-            <li>Gulp</li>
-            <li>Joomla</li>
-            <li>Atom</li>
-            <li>PHP Storm</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="more">
-
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2><span>.</span>laissez moi un message</h2>
-
-      <div class="section-content">
-        <form action="mailto:arnaud.prat@gmail.com">
-          <label for="mail">mail</label>
-          <input type="text" id="mail">
-          <label for="message">Message</label>
-          <textarea cols="30" rows="10" id="message"></textarea>
-          <button type="submit">submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/fullpagejs/jquery.fullpage.js"></script>
   <script src="js/app.js"></script>
 
   </body>
