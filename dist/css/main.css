@@ -414,6 +414,11 @@ section {
     .menu ul li {
       line-height: 1.2;
       text-align: right; }
+      .menu ul li.active a {
+        font-size: 1em;
+        -webkit-transition: 0.2s;
+                transition: 0.2s;
+        color: #F8B33C; }
       .menu ul li a {
         font-size: 0.8em;
         color: #dedede;
@@ -421,7 +426,7 @@ section {
         text-decoration: none;
         -webkit-transition: 0.2s;
                 transition: 0.2s; }
-        .menu ul li a:hover, .menu ul li a.active {
+        .menu ul li a:hover {
           font-size: 1em;
           -webkit-transition: 0.2s;
                   transition: 0.2s;
@@ -470,39 +475,38 @@ section {
 .portfolio {
   background: url(../img/portfolio.jpg) no-repeat;
   background-size: cover;
-  padding: 10em 0; }
+  padding: 5em 0; }
   .portfolio h2 {
     color: #fff; }
 
-.showcase:before,
-.showcase:after {
-  content: " ";
-  display: table; }
-
-.showcase:after {
-  clear: both; }
+.showcase {
+  position: relative; }
+  .showcase:before,
+  .showcase:after {
+    content: " ";
+    display: table; }
+  .showcase:after {
+    clear: both; }
 
 .showcase-img {
-  width: 66.66667%;
-  float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%; }
+  border-radius: 3px 3px 0 0;
+  overflow: hidden; }
   .showcase-img img {
     display: block;
     max-width: 100%;
     height: auto; }
 
 .showcase-caption {
-  width: 33.33333%;
-  float: left;
-  padding-left: 1.38889%;
-  padding-right: 1.38889%; }
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px; }
   .showcase-caption h3 {
-    color: #fff;
+    color: #303030;
     margin: 0; }
   .showcase-caption p {
-    font-size: 0.8em;
-    color: #ccc; }
+    font-size: 0.8em; }
 
 .gallery {
   margin-top: 1em; }
@@ -523,7 +527,7 @@ section {
       height: auto; }
 
 .experience, .formation {
-  padding: 10em 0; }
+  padding: 5em 0; }
   .experience .jobs, .formation .jobs {
     width: 50%;
     float: left;
@@ -559,3 +563,6 @@ section {
     margin: O 0.5em 0;
     padding: 0 0 0 15px;
     font-size: 0.9em; }
+
+.contact {
+  padding: 10em 0; }

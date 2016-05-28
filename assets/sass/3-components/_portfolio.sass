@@ -1,28 +1,33 @@
 .portfolio
   background: url(../img/portfolio.jpg) no-repeat
   background-size: cover
-  padding: 10em 0
+  padding: 5em 0
 
   h2
     color: #fff
 
 .showcase
   +clearfix
+  position: relative
 
 .showcase-img
-  +span(8)
+  border-radius: 3px 3px 0 0
+  overflow: hidden
   img
     +img-responsive
 
 .showcase-caption
-  +span(4)
+  background: #fff
+  width: 100%
+  position: absolute
+  bottom: 0
+  padding: 10px 20px
 
   h3
-    color: #fff
+    color: $title-font-color
     margin: 0
   p
     font-size: 0.8em
-    color: #ccc
 
 .gallery
   +clearfix
