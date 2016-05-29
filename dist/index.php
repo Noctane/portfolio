@@ -76,13 +76,13 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
             <img src="img/logo.svg" alt="Arnaud Prat">
           </div>
           <div class="title">
-          <h1><span>.</span>arnaud prat</h1>
+          <h1><span>.</span>arnaudprat</h1>
           <h2 class="sub">webdesigner / dev Front-end</h2>
           <div class="social">
             <ul>
-              <li><a href="https://fr.linkedin.com/pub/arnaud-prat/83/5b2/bb2"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/Noctane"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://twitter.com/arnaudprat"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://fr.linkedin.com/pub/arnaud-prat/83/5b2/bb2" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/Noctane" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://twitter.com/arnaudprat" target="_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
           </div>
           </div>
@@ -93,7 +93,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     <div class="section">
       <section class="portfolio" data-anchor="Portfolio">
         <div class="container">
-					<h2><span>.</span>portfolio</h2>
+					<!-- <h2><span>.</span>portfolio</h2> -->
           <div class="slide" data-anchor="slide1">
             <div class="showcase">
               <div class="showcase-img">
